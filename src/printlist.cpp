@@ -1,15 +1,21 @@
 #include "include/list.h"
+#include "include/database.h"
 
 int main(int arg_count, char *args[]){
+    List simplelist;
+    Database data;
 
     if(arg_count > 1){
-        List simplelist;
+        
         simplelist.name = string(args[1]);
         simplelist.print_menu();
+        data.write(simplelist.list);
+        data.read();
     }
     else{
         cout << "No input!" << endl;
     }
+
     return 0;
 }
 
