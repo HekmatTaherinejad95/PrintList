@@ -9,9 +9,9 @@ int main(int arg_count, char *args[]){
         simplelist.name = string(args[1]);
         simplelist.mainlist = data.read();
         simplelist.find_userlist();
+        simplelist.find_userlist();
         simplelist.print_menu();
-        // data.write(simplelist.list);
-        // data.read();
+        data.write(simplelist.mainlist);
     }
     else{
         cout << "No input!" << endl;
