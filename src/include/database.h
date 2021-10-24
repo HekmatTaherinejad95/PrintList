@@ -12,12 +12,12 @@ class Database {
     ~Database(){
 
     }
-    vector<string> list;
+    vector<vector<string>> mainlist;
     string name;
 
 
-    void write(vector<string> list);
-    void read();
+    void write(vector<vector<string>> list);
+    vector<vector<string>> read();
 
 
 

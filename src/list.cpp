@@ -87,3 +87,23 @@ void List::print_list() {
     }
 
 }
+
+void List::find_userlist() {
+    bool userfound = false;
+    cout << "\n\n\n\n\n\n\n";
+    cout << "*** Welcome " << name << " ***\n";
+
+    for (int user_index = 0; user_index < (int)mainlist.size(); user_index++)
+    {
+        cout << mainlist[user_index][0] << "\n";
+        if (mainlist[user_index][0] == name)
+        {
+            cout << "User has been found! "<< mainlist[user_index][0] << "\n" ;
+            list = mainlist[user_index];
+            userfound = true;
+            break; 
+        }
+        
+    }
+    
+}
